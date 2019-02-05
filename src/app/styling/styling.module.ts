@@ -5,6 +5,7 @@ import { ExternalStyleComponent } from './external-style/external-style.componen
 import { InlineStyleComponent } from './inline-style/inline-style.component';
 import { NativeEncapsulationComponent } from './native-encapsulation/native-encapsulation.component';
 import { NoEncapsulationComponent } from './no-encapsulation/no-encapsulation.component';
+import {MyStyleComponent} from "./my-components/my-style.component";
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { NoEncapsulationComponent } from './no-encapsulation/no-encapsulation.co
     ExternalStyleComponent,
     InlineStyleComponent,
     NativeEncapsulationComponent,
-    NoEncapsulationComponent
+    NoEncapsulationComponent,
+    MyStyleComponent
   ]
 })
 export class StylingModule { }
