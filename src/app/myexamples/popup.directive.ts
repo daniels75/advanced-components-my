@@ -1,10 +1,10 @@
-import {Directive, ElementRef, OnInit} from "@angular/core";
+import {Directive, ElementRef, HostListener, Input, OnInit} from "@angular/core";
 
 @Directive({
   selector: '[popup]'
 })
 export class PopupDirective implements OnInit {
-
+  @Input() message: String;
   constructor(_elementRef: ElementRef) {
     console.log(`Popup directive ${_elementRef}`);
     console.log(_elementRef);
@@ -12,5 +12,10 @@ export class PopupDirective implements OnInit {
 
   ngOnInit(): void {
     console.log('Popup ngOnInit');
+  }
+
+  @HostListener('click')
+  displayMessage(): void {
+    alert(this.message)
   }
 }
