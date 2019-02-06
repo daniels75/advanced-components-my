@@ -5,8 +5,9 @@ import {Component} from "@angular/core";
   template: `
       <div class="ui message" popup>
         <div class="header">Learning Directives</div>
+        <p>This should use a Popup directive</p>
       </div>
-    <p>This should use a Popup directive</p>
+    <i class="alarm icon" popup></i>
   `
 })
 export class ComponentWithPopupComponent {

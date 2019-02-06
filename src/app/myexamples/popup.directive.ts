@@ -1,12 +1,13 @@
-import {Directive, OnInit} from "@angular/core";
+import {Directive, ElementRef, OnInit} from "@angular/core";
 
 @Directive({
   selector: '[popup]'
 })
 export class PopupDirective implements OnInit {
 
-  constructor() {
-    console.log('Popup directive');
+  constructor(_elementRef: ElementRef) {
+    console.log(`Popup directive ${_elementRef}`);
+    console.log(_elementRef);
   }
 
   ngOnInit(): void {
