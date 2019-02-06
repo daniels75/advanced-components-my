@@ -48,8 +48,8 @@ import { OnInitDemoComponent } from './lifecycle/on-init/on-init-demo.component'
 import { OnChangesDemoComponent } from './lifecycle/on-changes/on-changes-demo.component';
 import { DiffersDemoComponent } from './lifecycle/differs/differs-demo.component';
 import { AllHooksDemoComponent } from './lifecycle/all-hooks/all-hooks-demo.component';
-import {MyExamplesComponent} from "./myexamples/myexamples.component";
-import {MyModule} from "./myexamples/MyModule";
+import {MyModuleModule} from "./myexamples/my-module.module";
+import {MyExamplesComponent} from "./myexamples/my-examples.component";
 
 /*
  * Here's the master list of our examples for this chapter.
@@ -128,7 +128,7 @@ const routes: Routes = [
     TabsModule,
     HostModule,
     LifecycleModule,
-    MyModule
+    MyModuleModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },

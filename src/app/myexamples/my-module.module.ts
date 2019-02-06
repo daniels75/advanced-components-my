@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {MyExamplesComponent} from "./myexamples.component";
+import {MyExamplesComponent} from "./my-examples.component";
 
 @NgModule({
   imports: [
@@ -10,4 +10,4 @@ import {MyExamplesComponent} from "./myexamples.component";
     MyExamplesComponent
   ]
 })
-export class MyModule { }
+export class MyModuleModule { }
