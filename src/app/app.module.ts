@@ -48,12 +48,15 @@ import { OnInitDemoComponent } from './lifecycle/on-init/on-init-demo.component'
 import { OnChangesDemoComponent } from './lifecycle/on-changes/on-changes-demo.component';
 import { DiffersDemoComponent } from './lifecycle/differs/differs-demo.component';
 import { AllHooksDemoComponent } from './lifecycle/all-hooks/all-hooks-demo.component';
+import {MyExamplesComponent} from "./myexamples/myexamples.component";
+import {MyModule} from "./myexamples/MyModule";
 
 /*
  * Here's the master list of our examples for this chapter.
  */
 const examples: ExampleDef[] = [ /* tslint:disable:max-line-length */
   {label: 'Intro',                            name: 'Root',                       path: '',                       component: IntroComponent},
+  {label: 'MyExamples',                       name: 'MyExamples',                 path: 'myexamples',                component: MyExamplesComponent },
   {label: 'Styling',                          name: 'Styling',                    path: 'styling',                component: StylingDemoComponent },
   {label: 'Modifying the Host (Step 1)',      name: 'Host1',                      path: 'host-step-1',            component: PopupDemoComponent1, dev: true},
   {label: 'Modifying the Host (Step 2)',      name: 'Host2',                      path: 'host-step-2',            component: PopupDemoComponent2, dev: true},
@@ -87,6 +90,7 @@ const examples: ExampleDef[] = [ /* tslint:disable:max-line-length */
 // manually
 const routes: Routes = [
   { path: '', component: IntroComponent, pathMatch: 'full' },
+  {path: 'myexamples', component: MyExamplesComponent, pathMatch: 'full'},
   { path: 'styling', component: StylingDemoComponent, pathMatch: 'full' },
   { path: 'ng-book-if', component: NgBookIfDemoComponent, pathMatch: 'full' },
   { path: 'ng-book-for', component: NgBookForDemoComponent, pathMatch: 'full' },
@@ -123,7 +127,8 @@ const routes: Routes = [
     ContentProjectionModule,
     TabsModule,
     HostModule,
-    LifecycleModule
+    LifecycleModule,
+    MyModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },
