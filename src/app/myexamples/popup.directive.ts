@@ -1,7 +1,8 @@
 import {Directive, ElementRef, HostListener, Input, OnInit} from "@angular/core";
 
 @Directive({
-  selector: '[popup]'
+  selector: '[popup]',
+  exportAs: 'popup'
 })
 export class PopupDirective implements OnInit {
   @Input() message: String;
