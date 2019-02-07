@@ -3,6 +3,8 @@ import {CommonModule} from "@angular/common";
 import {MyExamplesComponent} from "./my-examples.component";
 import {ComponentWithPopupComponent} from "./component-with-popup.component";
 import {PopupDirective} from "./popup.directive";
+import {MyContentProjectionHostComponent} from "./my-content-projection-host.component";
+import {MyContentInjectorComponent} from "./my-content-injector.component";
 
 @NgModule({
   imports: [
@@ -11,7 +13,9 @@ import {PopupDirective} from "./popup.directive";
   declarations: [
     MyExamplesComponent,
     PopupDirective,
-    ComponentWithPopupComponent
+    ComponentWithPopupComponent,
+    MyContentProjectionHostComponent,
+    MyContentInjectorComponent
   ]
 })
 export class MyModuleModule { }

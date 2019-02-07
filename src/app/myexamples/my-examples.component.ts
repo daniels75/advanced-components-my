@@ -4,6 +4,7 @@ import {Component} from "@angular/core";
   template: `
     <h3>My examples</h3>
     <component-with-popup></component-with-popup>
+    <my-content-projection-host></my-content-projection-host>
   `
 })
 export class MyExamplesComponent {
