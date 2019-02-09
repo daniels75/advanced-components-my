@@ -5,6 +5,7 @@ import {ComponentWithPopupComponent} from "./component-with-popup.component";
 import {PopupDirective} from "./popup.directive";
 import {MyContentProjectionHostComponent} from "./my-content-projection-host.component";
 import {MyContentInjectorComponent} from "./my-content-injector.component";
+import {MyContentTabComponent} from "./my-content-tab.component";
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import {MyContentInjectorComponent} from "./my-content-injector.component";
     PopupDirective,
     ComponentWithPopupComponent,
     MyContentProjectionHostComponent,
-    MyContentInjectorComponent
+    MyContentInjectorComponent,
+    MyContentTabComponent
   ]
 })
 export class MyModuleModule { }
