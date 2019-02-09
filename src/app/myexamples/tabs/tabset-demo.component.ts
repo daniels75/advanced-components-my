@@ -9,9 +9,9 @@ export class TabsetDemoComponent implements OnInit{
 
   ngOnInit() {
     this.tabs = [
-      {name: 'First tab', title: 'First title', content: 'This is a content of the first tab'},
-      {name: 'Second tab', title: 'Second title', content: 'This is a content of the second tab'},
-      {name: 'Third tab', title: 'Third title', content: 'This is a content of the third tab'}
+      {name: '3rd tab', title: 'Third title', content: 'This is a content of the Third tab'},
+      {name: '4th tab', title: 'Fifth title', content: 'This is a content of the Fifth tab'},
+      {name: '%th tab', title: 'Sixth title', content: 'This is a content of the Sixth tab'}
     ]
   }
 }

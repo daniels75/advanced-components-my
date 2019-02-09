@@ -8,6 +8,9 @@
   <tab2 title="Second tab" name="Second">
     Second tab content
   </tab2>
+  <tab2 *ngFor="let t of tabs" [title]="t.title" [name]="t.name">
+    {{t.content}}
+  </tab2>
 </tabset2>
 
 
