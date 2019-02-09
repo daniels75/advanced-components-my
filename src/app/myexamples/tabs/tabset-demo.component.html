@@ -1,4 +1,13 @@
 <h3>This a demo for TabSets component</h3>
-<ul *ngFor="let tab of tabs">
-  <li>{{tab.title}} {{tab.name}} {{tab.content}}</li>
-</ul>
+
+<tabset2>
+  <!-- this is a content of the tabs here one of tab2 is separate component demo content goes into tab2 -->
+  <tab2 title="First tab" name="First">
+    First tab content
+  </tab2>
+  <tab2 title="Second tab" name="Second">
+    Second tab content
+  </tab2>
+</tabset2>
+
+

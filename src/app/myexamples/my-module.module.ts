@@ -9,6 +9,8 @@ import {MyContentTabComponent} from "./my-content-tab.component";
 import {MyTabsetComponent} from "./my-tabset.component";
 import {MyContentTabsDemoComponent} from "./my-content-tabs-demo.component";
 import {TabsetDemoComponent} from "./tabs/tabset-demo.component";
+import {TabsetComponent} from "./tabs/tabset.component";
+import {TabComponent} from "./tabs/tab.component";
 
 @NgModule({
   imports: [
@@ -23,7 +25,9 @@ import {TabsetDemoComponent} from "./tabs/tabset-demo.component";
     MyContentTabComponent,
     MyTabsetComponent,
     MyContentTabsDemoComponent,
-    TabsetDemoComponent
+    TabsetDemoComponent,
+    TabsetComponent,
+    TabComponent
   ]
 })
 export class MyModuleModule { }
