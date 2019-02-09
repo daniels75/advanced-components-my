@@ -6,10 +6,17 @@ import {ContentTabComponent} from "../../tabs/content-tabs-demo/content-tab.comp
   selector: 'tabset2',
   templateUrl: './tabset.component.html'
 })
-export class TabsetComponent{
+export class TabsetComponent implements  AfterContentInit{
   @ContentChildren(TabComponent) tabs: QueryList<TabComponent>;
 
 
+ ngAfterContentInit() {
+   this.tabs.toArray()[0].active = true;
+ }
 
+ setActive(tab: TabComponent): void {
+   this.tabs.forEach(t => t.active = false);
+   tab.active = true;
+ }
 
 }

@@ -1,5 +1,13 @@
+<div class="ui top attached tabular menu">
+  <a *ngFor="let tab of tabs"
+     class="item"
+     [class.active]="tab.active"
+     (click)="setActive(tab)">
 
-<p *ngFor="let tab of tabs">
-  {{tab.title}}
-  {{tab.name}}
-</p>
+    {{ tab.title }}
+
+  </a>
+</div>
+<!-- this is a content that come for the tabset-demo.component
+only on "content of the tab" is displayed since only one is active at the moment -->
+<ng-content></ng-content>
