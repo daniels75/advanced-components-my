@@ -8,6 +8,7 @@ import {MyContentInjectorComponent} from "./my-content-injector.component";
 import {MyContentTabComponent} from "./my-content-tab.component";
 import {MyTabsetComponent} from "./my-tabset.component";
 import {MyContentTabsDemoComponent} from "./my-content-tabs-demo.component";
+import {TabsetDemoComponent} from "./tabs/tabset-demo.component";
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {MyContentTabsDemoComponent} from "./my-content-tabs-demo.component";
     MyContentInjectorComponent,
     MyContentTabComponent,
     MyTabsetComponent,
-    MyContentTabsDemoComponent
+    MyContentTabsDemoComponent,
+    TabsetDemoComponent
   ]
 })
 export class MyModuleModule { }
