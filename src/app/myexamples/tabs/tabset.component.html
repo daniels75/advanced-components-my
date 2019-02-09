@@ -1,5 +1,5 @@
 <div class="ui top attached tabular menu">
-  <a *ngFor="let tab of tabs"
+  <a *ngFor="let tab of allTabs"
      class="item"
      [class.active]="tab.active"
      (click)="setActive(tab)">
